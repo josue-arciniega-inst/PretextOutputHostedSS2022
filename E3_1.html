@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2022-01-23T19:33:43-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>E2.1</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script>$(function () {
+    // Make *any* div with class 'sagecell-sage' an executable Sage cell
+    // Their results will be linked, only within language type
+    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
+                           linked: true,
+                           languages: ['sage'],
+                           evalButtonText: 'Evaluate (Sage)'});
+});
+</script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg">miniversion=0.6</script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="hia.html"><span class="title">Soluciones del libro Neural Network Design Hagan Segunda edición</span></a></h1>
+<p class="byline">Josué Arciniega</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="C3.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="C3.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="C4.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="C3.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="C3.html" title="Up">Up</a><a class="next-button button toolbar-item" href="C4.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a><ul><li><a href="preface-1.html" data-scroll="preface-1">Preface</a></li></ul>
+</li>
+<li class="link">
+<a href="C2.html" data-scroll="C2"><span class="codenumber">1</span> <span class="title">Capítulo 2 Neuron Model and Network Architectures</span></a><ul><li><a href="E2_1.html" data-scroll="E2_1">E2.1</a></li></ul>
+</li>
+<li class="link">
+<a href="C3.html" data-scroll="C3"><span class="codenumber">2</span> <span class="title">Capítulo 3 An Illustrative Example</span></a><ul><li><a href="E3_1.html" data-scroll="E3_1" class="active">E2.1</a></li></ul>
+</li>
+<li class="link">
+<a href="C4.html" data-scroll="C4"><span class="codenumber">3</span> <span class="title">Capítulo 4 Perceptron Learning Rule</span></a><ul><li><a href="E4_1.html" data-scroll="E4_1">E2.1</a></li></ul>
+</li>
+<li class="link">
+<a href="C5.html" data-scroll="C5"><span class="codenumber">4</span> <span class="title">Capítulo 5 Signal and Weight Vector Spaces</span></a><ul><li><a href="E5_1.html" data-scroll="E5_1">E2.1</a></li></ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="E3_1"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.1</span> <span class="title">E2.1</span>
+</h2>
+<p id="p-7">A single input neuron has a weight of 1.3 and a bias of 3.0. What possible kinds of transfer functions, from Table 2.1, could this neuron have, if its output is given below. In each case, give the value of the input that would produce these outputs.</p>
+<a href="" data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-1" id="hint-1"><span class="type">Hint</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-1"><div class="hint solution-like"><div class="displaymath">
+\begin{equation*}
+\frac{3h}{3ij+p}
+\end{equation*}
+</div></div></div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><div class="displaymath">
+\begin{equation*}
+\frac{3h}{3ij+p}
+\end{equation*}
+</div></div></div>
+<figure class="listing figure-like" id="listing-1"><div class="code-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><pre class="console"><b>¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬   ® ¯
+</b><b>° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿
+</b><b>À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï
+</b><b>Ð Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß
+</b><b>à á â ã ä å æ ç è é ê ë ì í î ï
+</b><b>ð ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ
+</b></pre></div>
+<p id="p-8">We take care to render the <code class="code-inline tex2jax_ignore">U+0080</code>–<code class="code-inline tex2jax_ignore">U+00FF</code> characters in Sage cells.  This would allow some flexibility in comments and strings employed.  The following is just a test of these characters in the <code class="code-inline tex2jax_ignore">input</code> and <code class="code-inline tex2jax_ignore">output</code> of a <code class="code-inline tex2jax_ignore">sage</code> element.  This is not functional code.</p>
+<div class="sagecell-sage" id="sage-1"><script type="text/x-sage">¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬   ® ¯
+° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿
+À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï
+Ð Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß
+à á â ã ä å æ ç è é ê ë ì í î ï
+ð ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ
+</script></div>
+<article class="exercise exercise-like" id="exercise-1"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-1">
+    
+      
+      <span class="type">Answer</span><span class="period">.</span>
+    
+    
+    
+#############################################
+###       Generated from PreTeXt source      
+###       on 2022-01-23T19:33:40-06:00       
+###   A recent stable commit (2020-08-09):   
+### 98f21740783f166a773df4dc83cab5293ab63a4a 
+###                                          
+###         https://pretextbook.org          
+###                                          
+#############################################
+## DBsubject()
+## DBchapter()
+## DBsection()
+## Level()
+## KEYWORDS()
+## TitleText1()
+## EditionText1()
+## AuthorText1()
+## Section1(not reported)
+## Problem1([STRUCT].1)
+## Author()
+## Institution()
+## Language(en-US)
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "MathObjects.pl",
+  "PGML.pl",
+  "AnswerFormatHelp.pl",
+  "PGcourse.pl",
+);
+COMMENT('Authored in PreTeXt');
+
+############################################################
+# Header
+############################################################
+TEXT(beginproblem());
+
+############################################################
+# PG Setup Code
+############################################################
+Context('Numeric');
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+[`1+2=`][_]{'3'}{5}
+
+END_PGML
+
+############################################################
+# End Problem
+############################################################
+
+ENDDOCUMENT();
+
+  </a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1"><article class="exercise exercise-like"><div id="webwork-1" class="exercise-wrapper" data-domain="https://webwork-ptx.aimath.org" data-seed="1" data-problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIk1hdGhPYmplY3RzLnBsIiwiUEdNTC5wbCIsIkFuc3dlckZvcm1hdEhlbHAucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgnTnVtZXJpYycpOwoKQkVHSU5fUEdNTApbYDErMj1gXVtfXXsnMyd9ezV9CgoKRU5EX1BHTUwKCkVORERPQ1VNRU5UKCk7" data-courseID="anonymous" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-contents">
+<p id="p-9">\(1+2=\)<span class="fillin" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span></p>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-1" id="answer-1"><span class="type">Answer</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-1"><div class="answer solution-like"><p id="p-10">\(3\)</p></div></div>
+</div>
+</div>
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-1')">Make Interactive</button></div>
+</div></article></div>
+<figcaption><span class="type">Listing</span><span class="space"> </span><span class="codenumber">2.1.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure></section></div></main>
+</div>
+</body>
+</html>
